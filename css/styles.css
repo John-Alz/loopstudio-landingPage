@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+body {
+  font-family: "Alata", sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px 0;
+  max-width: 1440px;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 95vh;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 400;
+  margin-right: 150px;
+}
+
+.loop {
+  position: absolute;
+  top: 20px;
+  left: 130px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+}
+
+.lista {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-left: 20px;
+  margin: 20px 5px 15px 20px;
+  font-size: 15px;
+}
+
+.lista::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s, left 0.3s;
+  // position
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+}
+
+.lista:hover::after {
+  width: 100%;
+  // position
+  left: 0;
+}
+
+.header__tittle {
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 43%;
+  height: 10%;
+  font-size: 75px;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  margin-left: 130px;
+  margin-top: 110px;
+}
+
+.main_img {
+  margin-left: 130px;
+  margin-top: 150px;
+}
+
+.main_text {
+  background-color: hsl(0, 0%, 100%);
+  width: 480px;
+  padding: 45px 5px 15px 90px;
+  margin-left: 700px;
+  position: absolute;
+  top: 955px;
+}
+
+.main_tittle {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  width: 480px;
+  font-size: 50px;
+}
+
+.main_paragraph {
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 55%);
+  line-height: 25px;
+}
+
+.otra {
+  margin-top: 200px;
+}
+
+.tittle_1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-left: 130px;
+  width: 450px;
+}
+
+.button {
+  position: absolute;
+  top: 1490px;
+  right: 100px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 2pt;
+  font-size: 9px;
+  color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 41%);
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 2px solid hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+}
+
+.gallery {
+  margin-left: 130px;
+  margin-right: 90px;
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.card:before {
+  content: "";
+  width: 19%;
+  height: 68%;
+  position: absolute;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7));
+}
+
+.card:hover {
+  opacity: 0.8;
+  transition: transform 0.5s;
+}
+
+.image_tittle {
+  position: absolute;
+  top: 1960px;
+  margin-left: 50px;
+  width: 148px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 32px;
+  z-index: 2;
+}
+
+.image_tittle_2 {
+  position: absolute;
+  top: 2415px;
+  margin-left: 48px;
+  width: 200px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 32px;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  margin-top: 180px;
+  height: 160px;
+}
+
+.tittle_footer {
+  color: hsl(0, 0%, 100%);
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  margin-left: 130px;
+}
+
+.lista_footer {
+  margin-left: 115px;
+}
+
+.lista_footer_a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  margin: 20px 15px 20px;
+  padding-bottom: 30px;
+}
+.svg_facebook {
+  position: absolute;
+  top: 2785px;
+  right: 250px;
+}
+.svg_twitter {
+  position: absolute;
+  top: 2785px;
+  right: 210px;
+}
+.svg_pinterest {
+  position: absolute;
+  top: 2785px;
+  right: 170px;
+}
+.svg_instagram {
+  position: absolute;
+  top: 2785px;
+  right: 130px;
+}
+.text_footer {
+  color: hsl(0, 0%, 41%);
+  position: absolute;
+  top: 2820px;
+  right: 130px;
+  font-size: 15px;
+}
